@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 ​
-    <title>Clouds Dashboard</title>
+    <title>Home Page Dashboard</title>
 ​
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
@@ -18,7 +18,7 @@
     <!-- Navbar -->
 	<div class="navigation">
 	  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Latitude</a>
+        <a class="navbar-brand" href="index.html">Lattitude</a>
         <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,20 +46,21 @@
       </nav>
 	</div>
 ​
-    <!-- Container -->
+  <!-- Container -->
     <div class="container">
       <section class="row">
         <div class="col-lg-7 col-md-12">
           <div class="description-content">
-            <h1 class="description-header">Cloudiness</h1>
+            <h1 class="description-header">Summary: Latitude and Climate</h1>
             <hr>
-            <img src="Resources/assets/images/Fig3.png" alt="Latitude v. Cloudiness">
-            <p>We were unable to find any correlation between cloud cover and degrees of latitude. There were various results found at a number of different coordinates.</p>
+            <img src="Resources/assets/images/Fig1.png" alt="Latitude v. High Temperatures" class="description-image">
+            <p>Our analysis objective to review how climate variables can change based on degrees of latitude. We reviewed over 500 cities from the OpenWeatherMap API for the results.</p>
+            <p>Once the data was munged, we analyzed the data with a variety of plots for cloud cover, temparature, wind speed and humidity. Please see the results of the findings on this site. It will include visuals (MatplotLib), data (Pandas) and explanations of our observations of the data. Some of the results are predictable such as warmer temperatures closer to the equator, but others show variations such as wind speed.</p>
           </div>
         </div>
         <div class="col-lg-5 col-md-12">
 ​
-          <!-- Visuals-->
+          <!-- Visuals -->
           <section id="imageNav-area">
             <div class="imageNav-content">
               <h2 class="imageNav-header">Visualizations</h2>
@@ -68,16 +69,16 @@
 			    <div class="row">
 				  <div class="col-6">
                     <a href="temp.html">
-				      <img src="Resources/assets/images/Fig1.png" alt="Latitude v. High Temps", title="Latitude v. High Temps" class="imageNav-photo">
+				      <img src="Resources/assets/images/Fig1.png" alt="Latitude v. High Temperatures", title="Latitude v. High Temperatures" class="imageNav-photo">
 				    </a>
 				  </div>
 				  <div class="col-6">
                     <a href="humidity.html">
 				      <img src="Resources/assets/images/Fig2.png" alt="Latitude v. Humidity", title="Latitude v. Humidity" class="imageNav-photo">
 			        </a>
-				  </div>
+                    </div>
 				  <div class="col-6">
-                    <a href="clouds.html">
+                    <a href="cloudiness.html">
 				      <img src="Resources/assets/images/Fig3.png" alt="Latitude v. Cloudiness", title="Latitude v. Cloudiness", class="imageNav-photo">
 				    </a>
 				  </div>
@@ -99,6 +100,7 @@
     <footer>
       <div class="footer"></div>
     </footer>
+​
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
